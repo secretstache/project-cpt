@@ -1,4 +1,4 @@
-## Project Post Type
+## SSM Projects
 
 This is a feature plugin that adds a simple project custom post type to your theme.
 

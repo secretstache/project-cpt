@@ -1,18 +1,18 @@
 <?php
 /**
- * Project Post Type
+ * SSM Projects
  *
- * @package   Project_Post_Type
+ * @package   SSM_Projects
  * @license   GPL-2.0+
  *
  * @wordpress-plugin
- * Plugin Name: Project Post Type
+ * Plugin Name: SSM Projects
  * Plugin URI:  http://secretstache.com
- * Description: Enables a project post type, taxonomy and metaboxes.
+ * Description: Enables a Projects Custom Post Type.
  * Version:     0.1.0
  * Author:      Secret Stache Media
  * Author URI:  http://secretstache.com
- * Text Domain: project-post-type
+ * Text Domain: ssm-projects
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path: /languages
@@ -29,10 +29,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-post-type-registrations.ph
 require plugin_dir_path( __FILE__ ) . 'includes/class-post-type-metaboxes.php';
 
 // Instantiate registration class, so we can add it as a dependency to main plugin class.
-$post_type_registrations = new Project_Post_Type_Registrations;
+$post_type_registrations = new SSM_Projects_Registrations;
 
 // Instantiate main plugin file, so activation callback does not need to be static.
-$post_type = new Project_Post_Type( $post_type_registrations );
+$post_type = new SSM_Projects( $post_type_registrations );
 
 // Register callback that is fired when the plugin is activated.
 register_activation_hook( __FILE__, array( $post_type, 'activate' ) );
@@ -41,7 +41,7 @@ register_activation_hook( __FILE__, array( $post_type, 'activate' ) );
 $post_type_registrations->init();
 
 // Initialize metaboxes
-// $post_type_metaboxes = new Project_Post_Type_Metaboxes;
+// $post_type_metaboxes = new SSM_Projects_Metaboxes;
 // $post_type_metaboxes->init();
 
 
@@ -58,7 +58,7 @@ if ( is_admin() ) {
 
 	require plugin_dir_path( __FILE__ ) . 'includes/class-post-type-admin.php';
 
-	$post_type_admin = new Project_Post_Type_Admin( $post_type_registrations );
+	$post_type_admin = new SSM_Projects_Admin( $post_type_registrations );
 	$post_type_admin->init();
 
 }

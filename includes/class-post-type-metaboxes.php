@@ -1,17 +1,17 @@
 <?php
 /**
- * Project Post Type
+ * SSM Projects
  *
- * @package   Project_Post_Type
+ * @package   SSM_Projects
  * @license   GPL-2.0+
  */
 
 /**
  * Register metaboxes.
  *
- * @package Project_Post_Type
+ * @package SSM_Projects
  */
-class Project_Post_Type_Metaboxes {
+class SSM_Projects_Metaboxes {
 
 	public function init() {
 		add_action( 'add_meta_boxes', array( $this, 'project_meta_boxes' ) );
@@ -19,7 +19,7 @@ class Project_Post_Type_Metaboxes {
 	}
 
 	/**
-	 * Register the metaboxes to be used for the Project Post Type
+	 * Register the metaboxes to be used for the SSM Projects
 	 *
 	 * @since 0.1.0
 	 */
@@ -53,18 +53,18 @@ class Project_Post_Type_Metaboxes {
 
 			<tr>
 				<td class="project_meta_box_td" colspan="2">
-					<label for="profile_title"><?php _e( 'Title', 'project-post-type' ); ?>
+					<label for="profile_title"><?php _e( 'Title', 'ssm-projects' ); ?>
 					</label>
 				</td>
 				<td colspan="4">
 					<input type="text" name="profile_title" class="regular-text" value="<?php echo $title; ?>">
-					<p class="description"><?php _e( 'E.g. CEO, Sales Lead, Designer', 'project-post-type' ); ?></p>
+					<p class="description"><?php _e( 'E.g. CEO, Sales Lead, Designer', 'ssm-projects' ); ?></p>
 				</td>
 			</tr>
 
 			<tr>
 				<td class="project_meta_box_td" colspan="2">
-					<label for="profile_linkedin"><?php _e( 'LinkedIn URL', 'project-post-type' ); ?>
+					<label for="profile_linkedin"><?php _e( 'LinkedIn URL', 'ssm-projects' ); ?>
 					</label>
 				</td>
 				<td colspan="4">
@@ -74,7 +74,7 @@ class Project_Post_Type_Metaboxes {
 
 			<tr>
 				<td class="project_meta_box_td" colspan="2">
-					<label for="profile_twitter"><?php _e( 'Twitter URL', 'project-post-type' ); ?>
+					<label for="profile_twitter"><?php _e( 'Twitter URL', 'ssm-projects' ); ?>
 					</label>
 				</td>
 				<td colspan="4">
@@ -84,7 +84,7 @@ class Project_Post_Type_Metaboxes {
 
 			<tr>
 				<td class="project_meta_box_td" colspan="2">
-					<label for="profile_facebook"><?php _e( 'Facebook URL', 'project-post-type' ); ?>
+					<label for="profile_facebook"><?php _e( 'Facebook URL', 'ssm-projects' ); ?>
 					</label>
 				</td>
 				<td colspan="4">

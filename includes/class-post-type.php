@@ -1,8 +1,8 @@
 <?php
 /**
- * Project Post Type
+ * SSM Projects
  *
- * @package   Project_Post_Type
+ * @package   SSM_Projects
  * @license   GPL-2.0+
  */
 
@@ -11,7 +11,7 @@
  *
  * @since 0.1.0
  */
-class Project_Post_Type {
+class SSM_Projects {
 
 	/**
 	 * Plugin version, used for cache-busting of style and script file references.
@@ -32,7 +32,7 @@ class Project_Post_Type {
 	 *
 	 * @var string
 	 */
-	const PLUGIN_SLUG = 'project-post-type';
+	const PLUGIN_SLUG = 'ssm-projects';
 
 	protected $registration_handler;
 

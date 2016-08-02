@@ -2,7 +2,7 @@
 /**
  * Dashboard Glancer
  *
- * @package   Project_Post_Type
+ * @package   SSM_Projects
  * @author    Gary Jones
  * @link      http://gamajo.com/dashboard-glancer
  * @copyright 2014 Gary Jones, Gamajo Tech

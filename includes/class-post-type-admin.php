@@ -1,17 +1,17 @@
 <?php
 /**
- * Project Post Type
+ * SSM Projects
  *
- * @package   Project_Post_Type
+ * @package   SSM_Projects
  * @license   GPL-2.0+
  */
 
 /**
  * Register post types and taxonomies.
  *
- * @package Project_Post_Type
+ * @package SSM_Projects
  */
-class Project_Post_Type_Admin {
+class SSM_Projects_Admin {
 
 	protected $registration_handler;
 
@@ -47,7 +47,7 @@ class Project_Post_Type_Admin {
 	 * @return array Amended columns.
 	 */
 	public function add_image_column( $columns ) {
-		$column_thumbnail = array( 'thumbnail' => __( 'Image', 'project-post-type' ) );
+		$column_thumbnail = array( 'thumbnail' => __( 'Image', 'ssm-projects' ) );
 		return array_slice( $columns, 0, 2, true ) + $column_thumbnail + array_slice( $columns, 1, null, true );
 	}
 
