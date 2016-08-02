@@ -14,4 +14,4 @@ This plugin includes a couple common features that are used with custom post typ
 
 ### Credits
 
-Built by Secret Stache Media using Devin Price's [CPT Boilerplate](https://github.com/devinsays/team-post-type) as a starting point.  The "Dashboard Glancer" class and much re-used code from the Portfolio Post Type plugin by [Gary Jones](http://gamajo.com/).
+Built by [Secret Stache Media](http://secretstache.com) using Devin Price's [CPT Boilerplate](https://github.com/devinsays/team-post-type) as a starting point.  The "Dashboard Glancer" class and much re-used code from the Portfolio Post Type plugin by [Gary Jones](http://gamajo.com/).
