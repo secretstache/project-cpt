@@ -65,6 +65,7 @@ class SSM_Projects_Registrations {
 			'public'          => true,
 			'capability_type' => 'post',
 			'rewrite'         => array( 'slug' => 'project', ),
+			'has_archive'			=> 'projects',
 			'menu_position'   => 30,
 			'menu_icon'       => 'dashicons-admin-page',
 		);
