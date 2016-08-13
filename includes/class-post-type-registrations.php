@@ -64,7 +64,7 @@ class SSM_Projects_Registrations {
 			'supports'        => $supports,
 			'public'          => true,
 			'capability_type' => 'post',
-			'rewrite'         => array( 'slug' => 'project', ), // Permalinks format
+			'rewrite'         => array( 'slug' => 'project', ),
 			'menu_position'   => 30,
 			'menu_icon'       => 'dashicons-admin-page',
 		);
