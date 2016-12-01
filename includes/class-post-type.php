@@ -20,7 +20,7 @@ class SSM_Projects {
 	 *
 	 * @var string VERSION Plugin version.
 	 */
-	const VERSION = '0.1.0';
+	const VERSION = '0.1.4';
 
 	/**
 	 * Unique identifier for your plugin.
