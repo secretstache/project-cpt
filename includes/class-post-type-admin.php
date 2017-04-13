@@ -29,7 +29,7 @@ class SSM_Projects_Admin {
 		add_action( 'manage_' . $this->registration_handler->post_type . '_posts_custom_column', array( $this, 'display_image' ), 10, 1 );
 
 		// Allow filtering of posts by taxonomy in the admin view
-		add_action( 'restrict_manage_posts', array( $this, 'add_taxonomy_filters' ) );
+		// add_action( 'restrict_manage_posts', array( $this, 'add_taxonomy_filters' ) );
 
 		// Show post counts in the dashboard
 		add_action( 'right_now_content_table_end', array( $this, 'add_rightnow_counts' ) );
