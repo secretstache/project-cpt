@@ -9,7 +9,7 @@
  * Plugin Name: SSM Projects
  * Plugin URI:  http://secretstache.com
  * Description: Enables a Projects Custom Post Type.
- * Version:     0.1.4
+ * Version:     0.1.5
  * Author:      Secret Stache Media
  * Author URI:  http://secretstache.com
  * Text Domain: ssm-projects

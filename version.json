@@ -2,5 +2,6 @@
 "0.1.1" : "Initial Beta Release",
 "0.1.2" : "Adds support for project archives",
 "0.1.3" : "Adds support for genesis-cpt-archives-settings",
-"0.1.4" : "remves support for wp metaboxes"
+"0.1.4" : "Removes support for wp metaboxes",
+"0.1.5" : "Temporarily removes support for taxonomy filter on project list page"
 }
