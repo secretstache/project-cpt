@@ -29,7 +29,7 @@ class SSM_Projects_Admin {
 		add_action( 'manage_' . $this->registration_handler->post_type . '_posts_custom_column', array( $this, 'display_image' ), 10, 1 );
 
 		// Allow filtering of posts by taxonomy in the admin view
-		// add_action( 'restrict_manage_posts', array( $this, 'add_taxonomy_filters' ) );
+		add_action( 'restrict_manage_posts', array( $this, 'add_taxonomy_filters' ) );
 
 		// Show post counts in the dashboard
 		add_action( 'right_now_content_table_end', array( $this, 'add_rightnow_counts' ) );
@@ -98,7 +98,8 @@ class SSM_Projects_Admin {
 	 */
 	protected function build_taxonomy_filter( $tax_slug ) {
 		$terms = get_terms( $tax_slug );
-		if ( 0 == count( $terms ) ) {
+
+		if ( 0 == count( $terms ) || is_wp_error($terms) ) {
 			return '';
 		}
 
@@ -144,7 +145,7 @@ class SSM_Projects_Admin {
 				'<option value="%s"%s />%s</option>',
 				esc_attr( $term->slug ),
 				selected( $current_tax_slug, $term->slug ),
-				esc_html( $term->name . '(' . $term->count . ')' )
+				esc_html( $term->name . ' (' . $term->count . ')' )
 			);
 		}
 		return $options;
